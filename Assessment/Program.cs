@@ -200,7 +200,7 @@ using Assessment;
 
 Console.WriteLine("Please enter the color");
 Colors color;
-Enum.TryParse(Console.ReadLine(), out color);
+Enum.Parse(color.GetType(), Console.ReadLine());
 if(color == Colors.Red || color == Colors.Green || color == Colors.Blue)
 {
     Console.WriteLine("Primary");
