@@ -199,8 +199,8 @@
 using Assessment;
 
 Console.WriteLine("Please enter the color");
-Colors color;
-Enum.Parse(color.GetType(), Console.ReadLine());
+Colors color = Colors.Red;
+Enum.TryParse(color.GetType(),Console.ReadLine(), out color);
 if(color == Colors.Red || color == Colors.Green || color == Colors.Blue)
 {
     Console.WriteLine("Primary");
